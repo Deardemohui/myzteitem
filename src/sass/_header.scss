@@ -1,0 +1,114 @@
+//顶部上半部分
+.header-top-left{float: left;}
+.header-top-right{float: right;}
+.header-top{
+    height: 40px;
+    background: #f8f8f8;
+    line-height: 40px;
+    li{
+        float: left;
+        }
+    a{
+        color: #787878;
+        font-size: 12px;
+        padding: 0 10px;
+        line-height: normal;
+        display: inline-block;
+        img{
+            vertical-align: middle;
+            margin-bottom: 4px;
+         }
+        }
+    a:hover{
+        color: #000;
+    }
+    :before{
+        display: table;
+        content: "";
+    }
+    ul{
+        :before{
+           display: table;
+           content: "";
+        }
+    }
+}
+
+//顶部下半部分
+.header-bot{
+    height: 35px;
+    margin: 25px 0;
+    line-height: 35px;
+    .logo{
+        float: left;
+        width: 250px;
+        height: 35px;
+    }
+    .nav{
+        height: 35px;
+        width: 660px;
+        padding-left: 65px;
+        float: left;
+        :before{
+            display: table;
+            content: "";
+        }
+        li{
+            float: left;
+            margin: 0 15px;
+        }
+        a{
+            color: #333;
+        }
+        a:hover{
+            color: #0086d1;
+        }
+    }
+    .search{
+        float: right;
+        width: 216px;
+        height: 35px;
+        :before{
+            display: table;
+            content: "";
+        }
+        .search-input {
+            display: inline-block;
+            float: left;
+            position: relative;
+            margin-left: 10px;
+            input {
+                width: 140px;
+                height: 35px;
+                border-top: 1px solid #b8b8b8;
+                border-left: 1px solid #b8b8b8;
+                border-bottom: 1px solid #b8b8b8;
+                border-right: none;
+                outline: none;
+                padding: 0 0px 0 10px;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+            }
+        }
+        .search-button {
+            display: inline-block;
+            float: left;
+            margin-left: -5px;
+            cursor: pointer;
+            height: 35px;
+            width: 36px;
+            padding: 0px 6px;
+            background-color: #fff;
+            border-top: 1px solid #b8b8b8;
+            border-right: 1px solid #b8b8b8;
+            border-bottom: 1px solid #b8b8b8;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+        img{
+            display: inline-block;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+    }
+}

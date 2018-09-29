@@ -1,0 +1,39 @@
+.purchase-title{
+    height: 92px;
+    overflow: hidden;
+    .purchase-t{
+        float: left;
+        margin-top: 34px;
+    }
+    span{
+        display: inline-block;
+        font-size: 22px;
+        margin-left: 5px;
+    }
+    strong{
+        padding-left: 5px;
+        font-weight: normal;
+    }
+}
+
+.purchase-goods{
+    overflow: hidden;
+    padding-bottom: 20px;
+    li{
+        float: left;
+        margin: 0 4px 10px 4px;
+        position: relative;
+        transition: all 0.2s;
+        box-sizing: border-box;
+        .scalegoods{
+            box-sizing: border-box;
+        }
+    }
+    li:hover{
+        
+    }
+    img{
+        display: block;
+        border: 0;
+    }
+}

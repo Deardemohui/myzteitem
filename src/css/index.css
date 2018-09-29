@@ -1,0 +1,478 @@
+@charset "UTF-8";
+.header-top-left {
+  float: left;
+}
+
+.header-top-right {
+  float: right;
+}
+
+.header-top {
+  height: 40px;
+  background: #f8f8f8;
+  line-height: 40px;
+}
+.header-top li {
+  float: left;
+}
+.header-top a {
+  color: #787878;
+  font-size: 12px;
+  padding: 0 10px;
+  line-height: normal;
+  display: inline-block;
+}
+.header-top a img {
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+.header-top a:hover {
+  color: #000;
+}
+.header-top :before {
+  display: table;
+  content: "";
+}
+.header-top ul :before {
+  display: table;
+  content: "";
+}
+
+.header-bot {
+  height: 35px;
+  margin: 25px 0;
+  line-height: 35px;
+}
+.header-bot .logo {
+  float: left;
+  width: 250px;
+  height: 35px;
+}
+.header-bot .nav {
+  height: 35px;
+  width: 660px;
+  padding-left: 65px;
+  float: left;
+}
+.header-bot .nav :before {
+  display: table;
+  content: "";
+}
+.header-bot .nav li {
+  float: left;
+  margin: 0 15px;
+}
+.header-bot .nav a {
+  color: #333;
+}
+.header-bot .nav a:hover {
+  color: #0086d1;
+}
+.header-bot .search {
+  float: right;
+  width: 216px;
+  height: 35px;
+}
+.header-bot .search :before {
+  display: table;
+  content: "";
+}
+.header-bot .search .search-input {
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+}
+.header-bot .search .search-input input {
+  width: 140px;
+  height: 35px;
+  border-top: 1px solid #b8b8b8;
+  border-left: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+  border-right: none;
+  outline: none;
+  padding: 0 0px 0 10px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.header-bot .search .search-button {
+  display: inline-block;
+  float: left;
+  margin-left: -5px;
+  cursor: pointer;
+  height: 35px;
+  width: 36px;
+  padding: 0px 6px;
+  background-color: #fff;
+  border-top: 1px solid #b8b8b8;
+  border-right: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.header-bot .search img {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.footer {
+  background: #fff;
+  width: 100%;
+}
+
+.footer-bot {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  border-top: 1px solid #ccc;
+}
+.footer-bot div {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 11px;
+}
+.footer-bot div a {
+  display: inline-block;
+  color: #767676;
+  margin: 0px 10px;
+}
+.footer-bot div a:hover {
+  color: #000;
+}
+.footer-bot p {
+  width: 700px;
+  text-align: center;
+  color: #C2C2C2;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.footer-bot p a {
+  color: #C2C2C2;
+}
+.footer-bot p img {
+  vertical-align: middle;
+  display: inline-block;
+  width: 26px;
+  height: 36px;
+}
+
+.footer-mid {
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  padding: 45px;
+  padding-left: 68px;
+}
+.footer-mid h4 {
+  font-weight: normal;
+}
+.footer-mid h4 a {
+  color: #000;
+  font-size: 16px;
+}
+.footer-mid .contact, .footer-mid .help, .footer-mid .service, .footer-mid .about {
+  float: left;
+  width: 100px;
+  height: 192px;
+}
+.footer-mid .contact p, .footer-mid .help p, .footer-mid .service p, .footer-mid .about p {
+  padding: 5px 0;
+}
+.footer-mid .contact p a:hover, .footer-mid .help p a:hover, .footer-mid .service p a:hover, .footer-mid .about p a:hover {
+  color: red;
+}
+.footer-mid .help, .footer-mid .service, .footer-mid .about {
+  margin-left: 60px;
+}
+.footer-mid a {
+  font-size: 12px;
+  color: #999;
+}
+.footer-mid .customer {
+  float: left;
+  margin-left: 276px;
+  margin-top: 25px;
+}
+.footer-mid .customer p {
+  color: #787878;
+  font-size: 12px;
+  padding-top: 10px;
+}
+.footer-mid .kefu {
+  width: 102px;
+  height: 30px;
+  background: #0086d1;
+  line-height: 30px;
+  margin-top: 16px;
+  padding-left: 11px;
+  border-radius: 2px;
+}
+.footer-mid .kefu img {
+  vertical-align: middle;
+  border: 0;
+  margin-right: 3px;
+}
+.footer-mid .kefu a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-top {
+  overflow: hidden;
+  margin-top: 53px;
+  padding-bottom: 35px;
+}
+.footer-top li {
+  float: left;
+}
+.footer-top li img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-top li span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  font-size: 16px;
+  color: #333;
+}
+.footer-top li:nth-of-type(1) {
+  margin-left: 60px;
+}
+.footer-top li:nth-of-type(2) {
+  margin-left: 130px;
+}
+.footer-top li:nth-of-type(3) {
+  margin-left: 130px;
+}
+.footer-top li:nth-of-type(4) {
+  margin-left: 130px;
+}
+
+.banner {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+.banner .pic {
+  height: 480px;
+}
+.banner .pic li {
+  height: 480px;
+}
+.banner img {
+  display: block;
+  border: 0;
+  max-width: 100%;
+  height: 480px;
+}
+.banner .btn {
+  position: absolute;
+  right: 200px;
+  bottom: 20px;
+}
+.banner .btn li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  float: left;
+  background: none;
+  border: 1px solid #fff;
+  margin-left: 5px;
+}
+
+.menu {
+  position: absolute;
+  left: 100px;
+  top: 0;
+  z-index: 10;
+  width: 220px;
+  height: 450px;
+  padding: 15px;
+  background-color: rgba(248, 247, 247, 0.8);
+}
+.menu h4 {
+  font-weight: normal;
+  padding-bottom: 8px;
+}
+.menu h4 a {
+  color: #333;
+}
+.menu ul {
+  overflow: hidden;
+  margin-bottom: 19px;
+  width: 192px;
+  height: 19px;
+  position: relative;
+}
+.menu ul li {
+  float: left;
+  margin-right: 10px;
+}
+.menu ul a {
+  color: #999999;
+  font-size: 12px;
+}
+
+.purchase-title {
+  height: 92px;
+  overflow: hidden;
+}
+.purchase-title .purchase-t {
+  float: left;
+  margin-top: 34px;
+}
+.purchase-title span {
+  display: inline-block;
+  font-size: 22px;
+  margin-left: 5px;
+}
+.purchase-title strong {
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+.purchase-goods {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.purchase-goods li {
+  float: left;
+  margin: 0 4px 10px 4px;
+  position: relative;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+.purchase-goods li .scalegoods {
+  box-sizing: border-box;
+}
+.purchase-goods img {
+  display: block;
+  border: 0;
+}
+
+.mobilephone {
+  background: #F5F5F5;
+}
+
+.mobilephone-title {
+  height: 92px;
+  overflow: hidden;
+}
+.mobilephone-title .mobilephone-t {
+  float: left;
+  margin-top: 34px;
+}
+.mobilephone-title span {
+  display: inline-block;
+  font-size: 22px;
+  margin-left: 5px;
+}
+.mobilephone-title strong {
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+.wrapper1240 {
+  overflow: hidden;
+}
+
+.mobilephone-goods-left, .mobilephone-goods-right {
+  float: left;
+  overflow: hidden;
+}
+.mobilephone-goods-left a, .mobilephone-goods-right a {
+  display: block;
+}
+
+.mobilephone-goods-left {
+  transition: all 0.2s;
+  position: relative;
+  z-index: 1;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.mobilephone-goods-right {
+  width: 930px;
+}
+.mobilephone-goods-right li {
+  float: left;
+  margin: 0 5px 10px 5px;
+  background: white;
+  text-align: center;
+}
+.mobilephone-goods-right li p {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  padding-top: 15px;
+  margin-bottom: -5px;
+}
+.mobilephone-goods-right img {
+  display: block;
+  border: 0;
+  width: 150px;
+  height: 150px;
+  margin: 25px 0 0 15px;
+}
+.mobilephone-goods-right .scalegoods-img {
+  width: 180px;
+  height: 180px;
+  margin: 0 60px;
+  overflow: hidden;
+}
+.mobilephone-goods-right .scalegoods-description div {
+  font-size: 12px;
+  color: #b0b0b0;
+  height: 13px;
+  padding-bottom: 25px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+}
+.mobilephone-goods-right .scalegoods-description span {
+  display: block;
+  color: #fc6822;
+  font-size: 14px;
+  padding-bottom: 21px;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.42857143;
+  font-family: "微软雅黑";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 1230px;
+  margin: 0 auto;
+}
+
+.wrapper1240 {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=index.css.map */
