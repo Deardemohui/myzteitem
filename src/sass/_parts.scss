@@ -1,0 +1,118 @@
+.parts{
+    overflow: hidden;
+    background: #F5F5F5;
+}
+.parts-title{
+    overflow: hidden;
+    height: 92px;
+    .parts-left{
+        float: left;
+        margin-top: 34px;
+        overflow: hidden;
+        span{
+        display: inline-block;
+        font-size: 22px;
+        margin-left: 5px;
+        }
+        strong{
+            padding-left: 5px;
+            font-weight: normal;
+        }
+    }
+    .parts-right{
+        float: right;
+        overflow: hidden;
+        .pictab{
+            float: left;
+            overflow: hidden;
+            li{
+                float: left;
+                height: 91px;
+                padding-bottom: 2px;
+                text-align: center;
+                margin-right: 23px;
+                padding: 0 5px;
+                border-bottom: 3px solid transparent;
+                box-sizing: border-box;
+            }
+            .active{
+                border-bottom-color: orange;
+                a{
+                    color: orange;
+                }
+            }
+            a{
+                color: #767676;
+                font-size: 16px;
+                padding-top: 38px;
+            }
+        }
+        a{
+            float: left;
+            font-size: 16px;
+            padding-top: 38px;
+            display: inline-block;
+            color: #767676;
+            img{
+                vertical-align: middle;
+                margin-top: -3px;
+                margin-left: 3px;
+            }
+        }
+    }
+}
+
+.parts-goods{
+    .content{
+        overflow: hidden;
+        li{
+            float: left;
+            transition: all 0.2s;
+            position: relative;
+            z-index: 1;
+            margin: 0 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            box-sizing: border-box;
+            text-align: center;
+            background: #fff;
+        }
+        .scalegoods{
+            width: 300px;
+            .scalegoods-img{
+                width: 180px;
+                height: 180px;
+                position: relative;
+                overflow: hidden;
+                margin-left: 60px;
+                img{
+                    display: block;
+                    width: 150px;
+                    height: 150px;
+                    margin-left: 15px;
+                    border: 0;
+                    padding-top: 25px;
+                }
+            }
+            .scalegoods-content{
+                .goods-title{
+                    font-size: 15px;
+                    color: #333;
+                    height: 30px;
+                    padding: 0 15px;
+                    font-weight: 500;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding-top: 25px;
+                }
+                .goods-price{
+                    color: #fc6822;
+                    font-size: 14px;
+                    padding-top: 35px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

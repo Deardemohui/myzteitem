@@ -445,6 +445,194 @@
   padding-bottom: 21px;
 }
 
+.parts {
+  overflow: hidden;
+  background: #F5F5F5;
+}
+
+.parts-title {
+  overflow: hidden;
+  height: 92px;
+}
+.parts-title .parts-left {
+  float: left;
+  margin-top: 34px;
+  overflow: hidden;
+}
+.parts-title .parts-left span {
+  display: inline-block;
+  font-size: 22px;
+  margin-left: 5px;
+}
+.parts-title .parts-left strong {
+  padding-left: 5px;
+  font-weight: normal;
+}
+.parts-title .parts-right {
+  float: right;
+  overflow: hidden;
+}
+.parts-title .parts-right .pictab {
+  float: left;
+  overflow: hidden;
+}
+.parts-title .parts-right .pictab li {
+  float: left;
+  height: 91px;
+  padding-bottom: 2px;
+  text-align: center;
+  margin-right: 23px;
+  padding: 0 5px;
+  border-bottom: 3px solid transparent;
+  box-sizing: border-box;
+}
+.parts-title .parts-right .pictab .active {
+  border-bottom-color: orange;
+}
+.parts-title .parts-right .pictab .active a {
+  color: orange;
+}
+.parts-title .parts-right .pictab a {
+  color: #767676;
+  font-size: 16px;
+  padding-top: 38px;
+}
+.parts-title .parts-right a {
+  float: left;
+  font-size: 16px;
+  padding-top: 38px;
+  display: inline-block;
+  color: #767676;
+}
+.parts-title .parts-right a img {
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-left: 3px;
+}
+
+.parts-goods .content {
+  overflow: hidden;
+}
+.parts-goods .content li {
+  float: left;
+  transition: all 0.2s;
+  position: relative;
+  z-index: 1;
+  margin: 0 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+  background: #fff;
+}
+.parts-goods .content .scalegoods {
+  width: 300px;
+}
+.parts-goods .content .scalegoods .scalegoods-img {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 60px;
+}
+.parts-goods .content .scalegoods .scalegoods-img img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: 15px;
+  border: 0;
+  padding-top: 25px;
+}
+.parts-goods .content .scalegoods .scalegoods-content .goods-title {
+  font-size: 15px;
+  color: #333;
+  height: 30px;
+  padding: 0 15px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 25px;
+}
+.parts-goods .content .scalegoods .scalegoods-content .goods-price {
+  color: #fc6822;
+  font-size: 14px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.hardware {
+  overflow: hidden;
+  background: #F5F5F5;
+}
+
+.hardware-title {
+  height: 92px;
+  overflow: hidden;
+}
+.hardware-title .hardware-t {
+  float: left;
+  margin-top: 34px;
+}
+.hardware-title span {
+  display: inline-block;
+  font-size: 22px;
+  margin-left: 5px;
+}
+.hardware-title strong {
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+.hardware-goods {
+  overflow: hidden;
+}
+.hardware-goods .smart {
+  float: left;
+  width: 300px;
+  text-align: center;
+  background: #fff;
+  margin: 0 5px 10px 5px;
+  box-sizing: border-box;
+}
+.hardware-goods img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 0;
+  padding-top: 25px;
+  margin-left: 15px;
+}
+.hardware-goods .scalegoods-img {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 60px;
+}
+.hardware-goods .scalegoods-description p {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hardware-goods .scalegoods-description div {
+  font-size: 12px;
+  color: #b0b0b0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: -10px;
+}
+.hardware-goods .scalegoods-description span {
+  display: block;
+  margin-top: 18px;
+  padding-bottom: 24px;
+  color: #fc6822;
+}
+
 body {
   font-size: 14px;
   color: #333;
