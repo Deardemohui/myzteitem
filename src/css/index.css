@@ -36,6 +36,7 @@
 .header-top ul :before {
   display: table;
   content: "";
+  clear: both;
 }
 
 .header-bot {
@@ -287,10 +288,12 @@
   left: 100px;
   top: 0;
   z-index: 10;
-  width: 220px;
-  height: 450px;
-  padding: 15px;
+  width: 250px;
+  height: 480px;
   background-color: rgba(248, 247, 247, 0.8);
+}
+.menu li:hover {
+  background: #fff;
 }
 .menu h4 {
   font-weight: normal;
@@ -301,7 +304,6 @@
 }
 .menu ul {
   overflow: hidden;
-  margin-bottom: 19px;
   width: 192px;
   height: 19px;
   position: relative;
@@ -313,6 +315,11 @@
 .menu ul a {
   color: #999999;
   font-size: 12px;
+}
+
+.menu > li {
+  padding: 11.5px 20px 10px 22px;
+  position: relative;
 }
 
 .purchase-title {
@@ -334,7 +341,6 @@
 }
 
 .purchase-goods {
-  overflow: hidden;
   padding-bottom: 20px;
 }
 .purchase-goods li {
@@ -350,6 +356,16 @@
 .purchase-goods img {
   display: block;
   border: 0;
+}
+
+.purchase-goods-left:hover {
+  box-shadow: 0 8px 16px #ddd;
+  transform: translate(0, -5px);
+}
+
+.purchase-goods-right:hover {
+  box-shadow: 0 8px 16px #ddd;
+  transform: translate(0, -5px);
 }
 
 .mobilephone {
@@ -380,7 +396,6 @@
 
 .mobilephone-goods-left, .mobilephone-goods-right {
   float: left;
-  overflow: hidden;
 }
 .mobilephone-goods-left a, .mobilephone-goods-right a {
   display: block;
@@ -394,6 +409,11 @@
   margin-bottom: 10px;
 }
 
+.mobilephone-goods-left:hover {
+  box-shadow: 0 8px 16px #ddd;
+  transform: translate(0, -5px);
+}
+
 .mobilephone-goods-right {
   width: 930px;
 }
@@ -402,6 +422,7 @@
   margin: 0 5px 10px 5px;
   background: white;
   text-align: center;
+  transition: all 0.2s;
 }
 .mobilephone-goods-right li p {
   font-size: 15px;
@@ -413,6 +434,10 @@
   margin: 0;
   padding-top: 15px;
   margin-bottom: -5px;
+}
+.mobilephone-goods-right li:hover {
+  box-shadow: 0 8px 16px #ddd;
+  transform: translate(0, -5px);
 }
 .mobilephone-goods-right img {
   display: block;
@@ -510,8 +535,10 @@
   margin-left: 3px;
 }
 
-.parts-goods .content {
-  overflow: hidden;
+.parts-goods .content:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .parts-goods .content li {
   float: left;
@@ -524,6 +551,10 @@
   box-sizing: border-box;
   text-align: center;
   background: #fff;
+}
+.parts-goods .content li:hover {
+  box-shadow: 0 8px 16px #ddd;
+  transform: translate(0, -5px);
 }
 .parts-goods .content .scalegoods {
   width: 300px;
@@ -584,9 +615,12 @@
   font-weight: normal;
 }
 
-.hardware-goods {
-  overflow: hidden;
+.hardware-goods:after {
+  content: "";
+  display: table;
+  clear: both;
 }
+
 .hardware-goods .smart {
   float: left;
   width: 300px;
@@ -594,6 +628,11 @@
   background: #fff;
   margin: 0 5px 10px 5px;
   box-sizing: border-box;
+  transition: all 0.2s;
+}
+.hardware-goods .smart:hover {
+  box-shadow: 0 8px 16px #ddd;
+  transform: translate(0, -5px);
 }
 .hardware-goods img {
   display: block;
@@ -633,6 +672,11 @@
   color: #fc6822;
 }
 
+.hardware-img img {
+  display: block;
+  border: none;
+}
+
 body {
   font-size: 14px;
   color: #333;
@@ -661,6 +705,41 @@ ul, h4 {
 .wrapper1240 {
   width: 1240px;
   margin: 0 auto;
+}
+
+.listnav {
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  bottom: 80px;
+  width: 42px;
+  height: 129px;
+}
+.listnav a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-top: 1px;
+  background: url(../images/kf.jpg);
+  transition: background-position 1s;
+}
+.listnav .listnav-1 a {
+  background-position: 0 -798px;
+}
+.listnav .listnav-1 a:hover {
+  background-position: 0 -860px;
+}
+.listnav .listnav-2 a {
+  background-position: 0 -426px;
+}
+.listnav .listnav-2 a:hover {
+  background-position: 0 -488px;
+}
+.listnav .listnav-3 a {
+  background-position: 0 -674px;
+}
+.listnav .listnav-3 a:hover {
+  background-position: 0 -736px;
 }
 
 /*# sourceMappingURL=index.css.map */

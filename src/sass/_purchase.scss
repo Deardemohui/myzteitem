@@ -17,7 +17,6 @@
 }
 
 .purchase-goods{
-    overflow: hidden;
     padding-bottom: 20px;
     li{
         float: left;
@@ -36,4 +35,13 @@
         display: block;
         border: 0;
     }
+}
+
+.purchase-goods-left:hover{
+    box-shadow: 0 8px 16px #ddd;
+    transform: translate(0,-5px);
+}
+.purchase-goods-right:hover{
+    box-shadow: 0 8px 16px #ddd;
+    transform: translate(0,-5px);
 }

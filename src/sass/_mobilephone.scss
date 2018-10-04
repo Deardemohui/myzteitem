@@ -25,7 +25,7 @@
 
 .mobilephone-goods-left,.mobilephone-goods-right{
     float: left;
-    overflow: hidden;
+    
     a{
         display: block;
     }
@@ -38,6 +38,10 @@
     margin: 0 5px;
     margin-bottom: 10px;
 }
+.mobilephone-goods-left:hover{
+    box-shadow: 0 8px 16px #ddd;
+    transform: translate(0,-5px);
+}
 
 .mobilephone-goods-right{
     width: 930px;
@@ -46,6 +50,7 @@
         margin: 0 5px 10px 5px;
         background: white;
         text-align: center;
+        transition: all 0.2s;
         p{
             font-size: 15px;
             color: #333;
@@ -57,6 +62,10 @@
             padding-top: 15px;
             margin-bottom: -5px;
         }
+    }
+    li:hover{
+        box-shadow: 0 8px 16px #ddd;
+        transform: translate(0,-5px);
     }
     img{
         display: block;

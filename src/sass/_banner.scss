@@ -36,10 +36,12 @@
     left: 100px;
     top: 0;
     z-index: 10;
-    width: 220px;
-    height: 450px;
-    padding:15px;
+    width: 250px;
+    height: 480px;
     background-color: rgba(248, 247, 247, 0.8);
+    li:hover{
+        background: #fff;
+    }
     h4{
         font-weight: normal;
         padding-bottom: 8px;
@@ -49,7 +51,6 @@
     }
     ul{
         overflow: hidden;
-        margin-bottom: 19px;
         width: 192px;
         height: 19px;
         position: relative;
@@ -62,4 +63,8 @@
             font-size: 12px;
         }
     }
+}
+.menu>li{
+    padding: 11.5px 20px 10px 22px;
+    position: relative;
 }

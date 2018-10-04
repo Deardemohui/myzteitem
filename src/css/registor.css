@@ -1,0 +1,345 @@
+@charset "UTF-8";
+.footer {
+  background: #fff;
+  width: 100%;
+}
+
+.footer-bot {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  border-top: 1px solid #ccc;
+}
+.footer-bot div {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 11px;
+}
+.footer-bot div a {
+  display: inline-block;
+  color: #767676;
+  margin: 0px 10px;
+}
+.footer-bot div a:hover {
+  color: #000;
+}
+.footer-bot p {
+  width: 700px;
+  text-align: center;
+  color: #C2C2C2;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.footer-bot p a {
+  color: #C2C2C2;
+}
+.footer-bot p img {
+  vertical-align: middle;
+  display: inline-block;
+  width: 26px;
+  height: 36px;
+}
+
+.footer-mid {
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  padding: 45px;
+  padding-left: 68px;
+}
+.footer-mid h4 {
+  font-weight: normal;
+}
+.footer-mid h4 a {
+  color: #000;
+  font-size: 16px;
+}
+.footer-mid .contact, .footer-mid .help, .footer-mid .service, .footer-mid .about {
+  float: left;
+  width: 100px;
+  height: 192px;
+}
+.footer-mid .contact p, .footer-mid .help p, .footer-mid .service p, .footer-mid .about p {
+  padding: 5px 0;
+}
+.footer-mid .contact p a:hover, .footer-mid .help p a:hover, .footer-mid .service p a:hover, .footer-mid .about p a:hover {
+  color: red;
+}
+.footer-mid .help, .footer-mid .service, .footer-mid .about {
+  margin-left: 60px;
+}
+.footer-mid a {
+  font-size: 12px;
+  color: #999;
+}
+.footer-mid .customer {
+  float: left;
+  margin-left: 276px;
+  margin-top: 25px;
+}
+.footer-mid .customer p {
+  color: #787878;
+  font-size: 12px;
+  padding-top: 10px;
+}
+.footer-mid .kefu {
+  width: 102px;
+  height: 30px;
+  background: #0086d1;
+  line-height: 30px;
+  margin-top: 16px;
+  padding-left: 11px;
+  border-radius: 2px;
+}
+.footer-mid .kefu img {
+  vertical-align: middle;
+  border: 0;
+  margin-right: 3px;
+}
+.footer-mid .kefu a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-top {
+  overflow: hidden;
+  margin-top: 53px;
+  padding-bottom: 35px;
+}
+.footer-top li {
+  float: left;
+}
+.footer-top li img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-top li span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  font-size: 16px;
+  color: #333;
+}
+.footer-top li:nth-of-type(1) {
+  margin-left: 60px;
+}
+.footer-top li:nth-of-type(2) {
+  margin-left: 130px;
+}
+.footer-top li:nth-of-type(3) {
+  margin-left: 130px;
+}
+.footer-top li:nth-of-type(4) {
+  margin-left: 130px;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.42857143;
+  font-family: "微软雅黑";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 1230px;
+  margin: 0 auto;
+}
+
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper1240 {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.listnav {
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  bottom: 80px;
+  width: 42px;
+  height: 129px;
+}
+.listnav a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-top: 1px;
+  background: url(../images/kf.jpg);
+  transition: background-position 1s;
+}
+.listnav .listnav-1 a {
+  background-position: 0 -798px;
+}
+.listnav .listnav-1 a:hover {
+  background-position: 0 -860px;
+}
+.listnav .listnav-2 a {
+  background-position: 0 -426px;
+}
+.listnav .listnav-2 a:hover {
+  background-position: 0 -488px;
+}
+.listnav .listnav-3 a {
+  background-position: 0 -674px;
+}
+.listnav .listnav-3 a:hover {
+  background-position: 0 -736px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+}
+
+.header {
+  height: 40px;
+  background: #f8f8f8;
+  line-height: 40px;
+}
+.header li {
+  float: left;
+}
+.header a {
+  color: #787878;
+  font-size: 12px;
+  padding: 0 10px;
+  line-height: normal;
+  display: inline-block;
+}
+.header a img {
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+.header a:hover {
+  color: #000;
+}
+.header :before {
+  display: table;
+  content: "";
+  clear: both;
+}
+.header ul :before {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.middle {
+  background: #f8f8f8;
+}
+
+.m-left {
+  display: inline-block;
+  float: left;
+  width: 450px;
+  height: 334px;
+  margin-top: 80px;
+  text-align: right;
+  padding-right: 80px;
+  margin-bottom: 10px;
+  background: url(../images/icon-line.png) no-repeat right center;
+}
+.m-left img {
+  width: 334px;
+  height: 334px;
+}
+
+.m-right {
+  display: inline-block;
+  margin-left: 80px;
+  float: left;
+  margin-top: 40px;
+  background-color: transparent;
+  border: none;
+  width: 332px;
+  box-shadow: none;
+}
+.m-right .reg-title {
+  background-color: transparent;
+  border-bottom: none;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.m-right .reg-contents {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+.m-right .reg-contents div {
+  width: 332px;
+  height: 40px;
+  padding: 0;
+  position: relative;
+  margin-bottom: 12px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+.m-right .reg-contents input {
+  width: 326px;
+  border-radius: 2px;
+  display: block;
+  height: 34px;
+  font-size: 14px;
+  padding-left: 12px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+}
+.m-right .reg-contents p {
+  width: 340px;
+  text-align: center;
+}
+.m-right .reg-contents #checkinput {
+  width: 221px;
+  height: 27px;
+}
+.m-right .reg-contents #checkinput span {
+  cursor: pointer;
+  margin-right: 6px;
+}
+.m-right .reg-contents #checkinput a {
+  color: #ccc;
+}
+.m-right .reg-contents #check {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+.m-right .reg-contents #sub {
+  width: 340px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #0186d1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=registor.css.map */

@@ -20,8 +20,12 @@
     }
 }
 
+.hardware-goods:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 .hardware-goods{
-    overflow: hidden;
     .smart{
         float: left;
         width: 300px;
@@ -29,6 +33,11 @@
         background: #fff;
         margin: 0 5px 10px 5px;
         box-sizing: border-box;
+        transition: all 0.2s;
+    }
+    .smart:hover{
+        box-shadow: 0 8px 16px #ddd;
+        transform: translate(0,-5px);
     }
     img{
         display: block;
@@ -68,5 +77,12 @@
             padding-bottom: 24px;
             color: #fc6822;
         }
+    }
+}
+
+.hardware-img{
+    img{
+        display: block;
+        border: none;
     }
 }

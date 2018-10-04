@@ -63,8 +63,12 @@
 }
 
 .parts-goods{
+    .content:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
     .content{
-        overflow: hidden;
         li{
             float: left;
             transition: all 0.2s;
@@ -76,6 +80,10 @@
             box-sizing: border-box;
             text-align: center;
             background: #fff;
+        }
+        li:hover{
+            box-shadow: 0 8px 16px #ddd;
+            transform: translate(0,-5px);
         }
         .scalegoods{
             width: 300px;
