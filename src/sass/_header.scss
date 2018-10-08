@@ -3,6 +3,7 @@
 .header-top-right{float: right;}
 .header-top{
     height: 40px;
+    width: 100%;
     background: #f8f8f8;
     line-height: 40px;
     li{
@@ -37,26 +38,33 @@
 
 //顶部下半部分
 .header-bot{
-    height: 35px;
-    margin: 25px 0;
-    line-height: 35px;
+    //height: 35px;
+    width: 100%;
+    //margin: 25px 0;
+    //line-height: 35px;
+    position: relative;
     .logo{
         float: left;
         width: 250px;
         height: 35px;
+        margin-top: 25px;
     }
     .nav{
-        height: 35px;
+        //height: 35px;
         width: 660px;
         padding-left: 65px;
         float: left;
-        :before{
+        &:before{
             display: table;
             content: "";
+            clear: both;
         }
         li{
             float: left;
             margin: 0 15px;
+            height: 35px;
+            padding: 25px 0;
+            line-height: 35px;
         }
         a{
             color: #333;
@@ -69,9 +77,11 @@
         float: right;
         width: 216px;
         height: 35px;
-        :before{
+        margin-top:25px; 
+        &:before{
             display: table;
             content: "";
+            clear: both;
         }
         .search-input {
             display: inline-block;
@@ -110,6 +120,83 @@
             display: inline-block;
             margin-top: 5px;
             margin-left: 10px;
+        }
+    }
+}
+
+.axonbox,.bladebox{
+    position: absolute;
+    left: 0;
+    top: 85px;
+    z-index: 20;
+    width: 100%;
+    min-height: 228px;
+    background-color: #ffffff;
+    display: none;
+    height: 228px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    color: #333;
+    .list-daonav{
+        li{
+            float: left;
+            width: 205px;
+            height: 228px;
+            margin: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+            a{
+                display: block;
+                color: #333;
+            }
+            .goods-img{
+                //margin-top: 20px;
+                width: 204px;
+                height: 140px;
+                line-height: 140px;
+                text-align: center;
+                box-sizing: border-box;
+                border-left: 1px solid #ccc;
+            }
+            .goods-img>img{
+                max-width: 100%;
+                max-height: 100%;
+                vertical-align: middle;
+                display: block;
+                border: 0;
+                box-sizing: border-box;
+                margin-left: 35px;
+            }
+            .goods-content{
+                margin-top: 10px;
+                padding-bottom: 8px;
+                transition: all 0.45s;
+                //box-sizing: border-box;
+            }
+            .goods-title{
+                text-align: center;
+                height: 20px;
+                line-height: 20px;
+                padding: 0 10px;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                //box-sizing: border-box;
+                color: #666;
+            }
+            .goods-price{
+                text-align: center;
+                height: 20px;
+                line-height: 20px;
+                //box-sizing: border-box;
+                color: #fc6628;
+                font-size: 12px;
+            }
         }
     }
 }

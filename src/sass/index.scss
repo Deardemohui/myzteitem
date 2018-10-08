@@ -18,6 +18,7 @@ a{text-decoration: none;}
 ul,h4{padding: 0;margin: 0;}
 .wrapper{width: 1230px;margin: 0 auto;}
 .wrapper1240{width: 1240px;margin: 0 auto;}
+.clearfix{display: table;content: "";clear: both;}
 
 .listnav{
     position: fixed;
@@ -58,4 +59,56 @@ ul,h4{padding: 0;margin: 0;}
             background-position: 0 -736px;
         }
     }
+}
+
+//左侧楼梯样式
+#loutinav {
+    width: 35px;
+    position: fixed;
+    z-index: 15;
+    top: 200px;
+    left: 15px;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+#loutinav ul li {
+    width: 35px;
+    height: 32px;
+    border-bottom: 1px dotted #DDDDDD;
+    list-style: none;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 0;
+    background: #999;
+    color: #fff;
+}
+
+#loutinav ul li span {
+    width: 35px;
+    height: 32px;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#loutinav ul li.last {
+    background: #666;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#loutinav ul li.active span {
+    background: #c00;
+    color: #fff;
+    display: block;
+}
+
+#loutinav ul li:hover span {
+    background: #c00;
+    color: #fff;
+    display: block;
 }

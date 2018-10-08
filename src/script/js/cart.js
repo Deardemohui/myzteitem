@@ -4,4 +4,24 @@
 	$('.topcontent').load('header.html');
 	//引入尾部html
 	$('.footercontent').load('footer.html');
+	
+	//头部导航内两个li标签划过显示隐藏盒子(这里要用事件委托因为头部是导入的,取不到header里面的元素)
+	//AXON系列
+	//鼠标移入时
+	$('.topcontent').on('mouseover','.axon',function(){
+		$('.axonbox').show();
+	});
+	//鼠标移出时
+	$('.topcontent').on('mouseout','.axon',function(){
+		$('.axonbox').hide();
+	});
+	//BLADE系列
+	//鼠标移入时
+	$('.topcontent').on('mouseover','.blade',function(){
+		$('.bladebox').show();
+	});
+	//鼠标移出时
+	$('.topcontent').on('mouseout','.blade',function(){
+		$('.bladebox').hide();
+	});
 }(jQuery);
