@@ -337,12 +337,17 @@
   height: 480px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .banner .pic li {
   height: 480px;
   width: 1920px;
   position: absolute;
   top: 0;
+  left: 1640px;
+}
+.banner .pic .picfirst {
+  left: -280px;
 }
 .banner img {
   display: block;
@@ -351,7 +356,7 @@
 .banner .btn {
   position: absolute;
   right: 200px;
-  bottom: 20px;
+  bottom: 30px;
 }
 .banner .btn span {
   display: block;
@@ -363,6 +368,9 @@
   border: 1px solid #fff;
   margin-left: 5px;
   cursor: pointer;
+}
+.banner .btn .btnhover {
+  background: #fff;
 }
 
 .menu {

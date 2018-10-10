@@ -7,12 +7,16 @@
         height: 480px;
         width: 100%;
         position: relative;
+        overflow: hidden;
         li{
             height: 480px;
             width: 1920px;
             position: absolute;
             top: 0;
-            //left: -280px;
+            left: 1640px;
+        }
+        .picfirst{
+            left: -280px;
         }
     }
     img{
@@ -22,7 +26,7 @@
     .btn{
         position: absolute;
         right: 200px;
-        bottom: 20px;
+        bottom: 30px;
         span{
             display: block;
             width: 10px;
@@ -33,6 +37,9 @@
             border: 1px solid #fff;
             margin-left: 5px;
             cursor: pointer;
+        }
+        .btnhover{
+            background: #fff;
         }
     }
 }
