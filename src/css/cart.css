@@ -30,9 +30,10 @@
 .header-top a:hover {
   color: #000;
 }
-.header-top :before {
+.header-top:before {
   display: table;
   content: "";
+  clear: both;
 }
 .header-top ul :before {
   display: table;
@@ -43,6 +44,11 @@
 .header-bot {
   width: 100%;
   position: relative;
+}
+.header-bot:after {
+  display: table;
+  content: "";
+  clear: both;
 }
 .header-bot .logo {
   float: left;

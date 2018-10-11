@@ -6,7 +6,7 @@ define(['jquery','jquery.cookie','jquery.validate'],function($){
 		}(),
 		
 		//表单验证
-		biaodanyanzheng:!function(){
+		regbiaodanyanzheng:!function(){
 			$('#signup').validate({
 				rules:{
 					username:{

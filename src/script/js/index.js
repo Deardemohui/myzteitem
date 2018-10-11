@@ -3,7 +3,7 @@ define(['jquery'],function($){
 		//导入模块的公用部分(头部和尾部并包含头部的公共js效果)
 		common:!function(){
 			
-			$.ready(!function(){
+			$(document).ready(!function(){
 				//引入头部html
 				$('.topcontent').load('header.html');
 				//引入尾部html
@@ -62,6 +62,7 @@ define(['jquery'],function($){
 						$('.loginbox').hide();
 						$('.registorbox').hide();
 						$('.adminbox').show().find('span').html('你好,'+getCookie('UserName')+'用户');
+						$('.adminbox').show().find('span').css('font-size','12px');
 					}
 					$('.adminbox a').on('click',function(){
 						delCookie('UserName','',-1);
@@ -70,9 +71,6 @@ define(['jquery'],function($){
 						$('.registorbox').show();
 					});
 				});
-				console.log($('.loginbox'));
-				console.log($('.registorbox'));
-				console.log($('.adminbox'));
 			}());
 			
 		}(),
@@ -208,24 +206,26 @@ define(['jquery'],function($){
 						async:true,
 						dataType:"json"
 					}).done(function(data){
-						var $datalist=data;
 						var $htmlstr='';
-						for(var $obj of $datalist){
-							$htmlstr+=`<li class="m-goods-${$obj.sid}">
-								<div class="scalegoods">
-									<a href="##">
-										<div class="scalegoods-img">
-											<img src="${$obj.url}" alt="">
-										</div>
-										<div class="scalegoods-description">
-											<p class="goods-title">${$obj.title}</p>
-											<div class="goods-description">${$obj.description}</div>
-											<span class="goods-price">￥<strong>${$obj.price}</strong></span>
-										</div>
-									</a>
-								</div>
-							</li>`;
-						}
+						
+						$.each(data, function(index,value) {
+							$htmlstr+='<li class="m-goods-'+value.sid+'">'+
+								'<div class="scalegoods">'+
+									'<a href="http://10.31.162.62/myzte/src/details.html?sid='+value.sid+'">'+
+										'<div class="scalegoods-img">'+
+											'<img src="'+value.url.split(',')[0]+'" alt="">'+
+										'</div>'+
+										'<div class="scalegoods-description">'+
+											'<p class="goods-title">'+value.title+'</p>'+
+											'<div class="goods-description">'+value.description+'</div>'+
+											'<span class="goods-price">￥<strong>'+value.price+'</strong>'+
+											'</span>'+
+										'</div>'+
+									'</a>'+
+								'</div>'+
+							'</li>';
+						});
+						
 						$('.mobilephone-goods-right').html($htmlstr);
 					});
 				//}

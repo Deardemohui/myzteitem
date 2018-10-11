@@ -119,6 +119,7 @@ ul,h4{padding: 0;margin: 0;}
 
 .m-right{
     display: inline-block;
+    position: relative;
     margin-left: 80px;
     float: left;
     margin-top: 40px;
@@ -126,13 +127,6 @@ ul,h4{padding: 0;margin: 0;}
     border: none;
     width: 332px;
     box-shadow: none;
-    #errordata{
-        display: block;
-        color: green;
-        margin-left: 5px;
-        margin-top: -10px;
-        text-align: left;
-    }
     .reg-title{
             background-color: transparent;
             border-bottom: none;
@@ -140,6 +134,12 @@ ul,h4{padding: 0;margin: 0;}
             font-size: 24px;
             margin-bottom: 20px;
             padding: 0 15px;
+    }
+    #errordata{
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 36px;
     }
     .reg-contents{
         font-size: 14px;
@@ -150,7 +150,7 @@ ul,h4{padding: 0;margin: 0;}
             height: 40px;
             padding: 0;
             position: relative;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             padding: 3px;
             box-sizing: border-box;
         }

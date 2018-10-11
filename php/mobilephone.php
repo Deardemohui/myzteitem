@@ -5,7 +5,7 @@
 	
 	//3.执行sql语句  mysql_query()
 	//$result:结果集，记录集。
-	$result=mysql_query("select * from mobile");
+	$result=mysql_query("select * from mobilephone");
 	
 	//4.操作数据库
 	//获取记录集的内容--mysql_fetch_array(数组的形式获取记录集)
@@ -17,6 +17,4 @@
 
 	echo json_encode($piclist);
 
-
-	mysql_close($conn);//关闭数据库连接
 ?>

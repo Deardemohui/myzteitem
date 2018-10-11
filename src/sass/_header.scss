@@ -18,14 +18,15 @@
         img{
             vertical-align: middle;
             margin-bottom: 4px;
-         }
         }
+    }
     a:hover{
         color: #000;
     }
-    :before{
+    &:before{
         display: table;
         content: "";
+        clear: both;
     }
     ul{
         :before{
@@ -43,6 +44,11 @@
     //margin: 25px 0;
     //line-height: 35px;
     position: relative;
+    &:after{
+        display: table;
+        content: "";
+        clear: both;
+    }
     .logo{
         float: left;
         width: 250px;
