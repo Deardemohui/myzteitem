@@ -481,8 +481,9 @@ ul, h4, ol {
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
+  position: relative;
 }
-.main-content .m-d-left .pic-slide:after, .main-content .m-d-left .pic-img-list {
+.main-content .m-d-left .pic-slide:after, .main-content .m-d-left .pic-img-list:after {
   display: table;
   content: "";
   clear: both;
@@ -492,6 +493,9 @@ ul, h4, ol {
   padding: 0;
   width: 1000px;
   overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .main-content .m-d-left .pic-img-list li {
   padding: 0 8px;

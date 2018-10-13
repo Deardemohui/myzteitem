@@ -213,7 +213,7 @@ define(['jquery'],function($){
 								'<div class="scalegoods">'+
 									'<a href="http://10.31.162.62/myzte/src/details.html?sid='+value.sid+'">'+
 										'<div class="scalegoods-img">'+
-											'<img src="'+value.url.split(',')[0]+'" alt="">'+
+											'<img src="'+value.url.split(',')[0]+'" alt="" sid="'+value.sid+'">'+
 										'</div>'+
 										'<div class="scalegoods-description">'+
 											'<p class="goods-title">'+value.title+'</p>'+

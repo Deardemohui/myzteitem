@@ -1,43 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>我的购物车</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/cart.css">
-	<link rel="stylesheet" href="css/other.css">
-	<style type="text/css">
-		
-	</style>
-</head>
-<body>
-	<!--导入头部-->
-	<div class="topcontent"></div>
-	
-	<div class="cart-middle">
-		<div class="wrapper">
-			<div class="cart-blank">
-				<div class="cart-img"><img src="https://www.myzte.com/themes/pc/zmall/images/blankcart.png?vb701" alt=""></div>
-				<div class="cart-text">
-					<h3>购物车是空的！</h3>
-					<p>请快挑选喜欢的商品吧</p>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/cart.css">
+		<link rel="stylesheet" href="css/other.css">
+		<style type="text/css">
+
+		</style>
+	</head>
+	<script src="script/js/require.js" type="text/javascript" defer async="true" data-main="script/js/main.js"></script>
+
+	<body>
+		<!--导入头部-->
+		<div class="topcontent"></div>
+
+		<div class="cart-middle">
+			<div class="wrapper990">
+				<!--空购物车-->
+				<div class="cart-blank" style="display: block;">
+					<div class="cart-img"><img src="https://www.myzte.com/themes/pc/zmall/images/blankcart.png?vb701" alt=""></div>
+					<div class="cart-text">
+						<h3>购物车是空的！</h3>
+						<p>请快挑选喜欢的商品吧</p>
+					</div>
+					<div class="cart-btn">
+						<p>
+							<a href="http://10.31.162.62/myzte/src/index.html" class="rightbtn">立即去购物</a>
+						</p>
+					</div>
 				</div>
-				<div class="cart-btn">
-					<p><a href="index.html" class="rightbtn">立即去购物</a></p>
+
+				<div class="cart-m-top" style="display: block;">
+					<div class="cart-top-left">
+						<a href=""><em>全部商品</em></a>
+					</div>
+					<div class="footline">
+						<div class="line"></div>
+					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	
-	<!--导入尾部-->
-	<div class="footercontent"></div>
-	
-	<ul class="listnav">
-		<li class="listnav-1"><a href="##"></a></li>
-		<li class="listnav-2"><a href="##"></a></li>
-		<li class="listnav-3"><a href="##"></a></li>
-	</ul>
-	<script src="script/thirdplugins/jquery.js" type="text/javascript"></script>
-	<script src="script/js/cart.js" type="text/javascript"></script>
-</body>
+
+				<!--包裹购物车-->
+				<div class="cart-wrap" style="display: block;">
+					<div id="jd-cart">
+						<div class="cartmain">
+							<div class="cart-thead">
+								<div class="cart-col t-checkbox">
+									<div class="cart-checkbox">
+										<input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+									</div>
+								</div>
+								<div class="cart-col t-goods">商品</div>
+								<div class="cart-col t-props"></div>
+								<div class="cart-col t-prices">单价(元)</div>
+								<div class="cart-col t-quantity">数量</div>
+								<div class="cart-col t-sum">小计(元)</div>
+								<div class="cart-col t-action">操作</div>
+							</div>
+							<div id="cart-list">
+								<div class="cart-item-list">
+									<div class="cart-tbody">
+										<div class="item-list">
+											<div class="goods-item goods-item-sele" style="display: none;">
+												<div class="goods-info">
+													<div class="cell b-checkbox">
+														<div class="cart-checkbox">
+															<input type="checkbox" checked="" name="" id="" value="" />
+															<span class="line-circle"></span>
+														</div>
+													</div>
+													<div class="cell b-goods">
+														<div class="goods-name">
+															<div class="goods-pic">
+																<a href=""><img src="https://image.myzte.com/44/6b/6143852513f3.jpg!s?72422_OW800_OH800" alt="" /></a>
+															</div>
+															<div class="goods-msg">
+																<div class="goods-d-info">
+																	<a href="">Apple iMac 27英寸一体机（Core i5 处理器/8GB内存/1TB存储/2GB独显/Retina 5K屏 MK462CH/A）</a>
+																</div>
+																<div class="goods-ex">
+																	<span class="promise"></span>
+																	<span class="promise">
+																		<i></i><a href="">购买京东服务</a>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="cell b-props">
+														<div class="prop-text">尺码：27英寸Retina 5K 显示屏</div>
+													</div>
+													<div class="cell b-price">
+														<strong>13488.00</strong>
+														<a class="sales-promotion" href="">
+															促销优惠
+															<b></b>
+														</a>
+														<div class="sales-promotion-dropdown">
+														</div>
+													</div>
+													<div class="cell b-quantity">
+														<div class="quantity-form">
+															<a class="quantity-down" href="javascript:void(0)">-</a>
+															<input type="text" value="1" />
+															<a class="quantity-add" href="javascript:void(0)">+</a>
+														</div>
+														<div class="quantity-text">有货</div>
+													</div>
+													<div class="cell b-sum">
+														<strong>13488.00</strong>
+													</div>
+													<div class="cell b-action">
+														<a href="javascript:void(0)">删除</a>
+														<a href="javascript:void(0)">移到我的关注</a>
+													</div>
+												</div>
+											</div><!--displaynone-->
+										</div><!--item-list-->
+									</div><!--cart-tbody-->
+								</div><!--cart-item-list-->
+							</div><!--cart-list-->
+						</div><!--cartmain-->
+					</div><!--jd-cart-->
+					<div id="cart-floatbar">
+						<div class="select-all">
+							<div class="cart-checkbox">
+								<input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+							</div>
+						</div>
+						<div class="operation">
+							<a href="javascript:void(0)">删除选中的商品</a>
+							<a href="javascript:void(0)">移到我的关注</a>
+						</div>
+						<div class="toolbar-right">
+							<div class="btn-area">
+								<a href=""></a>
+							</div>
+							<div class="price-sum">
+								<span class="txt">总价（不含运费）：</span>
+								<span class="totalprice">￥0.00</span>
+								<span class="txt">已节省：</span>
+								<span class="totalsave">-￥0.00</span>
+							</div>
+							<div class="amount-sum">
+								已选择
+								<em>0</em> 件商品
+								<b></b>
+							</div>
+						</div>
+					</div><!--cart-footbar-->
+				</div><!--cart-wrap-->
+				
+			</div><!--wrapper990-->
+		</div><!--cart-middle-->
+
+		<!--导入尾部-->
+		<div class="footercontent"></div>
+
+		<ul class="listnav">
+			<li class="listnav-1">
+				<a href="##"></a>
+			</li>
+			<li class="listnav-2">
+				<a href="##"></a>
+			</li>
+			<li class="listnav-3">
+				<a href="##"></a>
+			</li>
+		</ul>
+	</body>
+
 </html>

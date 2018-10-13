@@ -141,9 +141,10 @@ ul,h4,ol{padding: 0;margin: 0;}
                 margin: 0 auto;
                 padding: 0;
                 overflow: hidden;
+                position: relative;
             }
         }
-        .pic-slide:after,.pic-img-list{
+        .pic-slide:after,.pic-img-list:after{
             display: table;
             content: "";
             clear: both;
@@ -153,6 +154,9 @@ ul,h4,ol{padding: 0;margin: 0;}
             padding: 0;
             width: 1000px;
             overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
             li{
                 padding: 0 8px;
                 display: block;
