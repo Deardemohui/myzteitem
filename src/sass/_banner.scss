@@ -13,10 +13,10 @@
             width: 1920px;
             position: absolute;
             top: 0;
-            left: 1640px;
+            left: 1720px;
         }
         .picfirst{
-            left: -280px;
+            left: -200px;
         }
     }
     img{
@@ -46,7 +46,7 @@
 
 .menu{
     position: absolute;
-    left: 100px;
+    left: 150px;
     top: 0;
     z-index: 10;
     width: 250px;
@@ -76,12 +76,34 @@
             font-size: 12px;
         }
     }
-    .more-goods-block{
-        position: absolute;
-        background-color: #fff;
-        top: 0;
-        left: 250px;
+    .m1,.m2,.m3,.m4,.m5,.m6,.m7{
         display: none;
+        position: absolute;
+        left: 250px;
+    }
+    .m1{
+        top: 0;
+    }
+    .m2{
+        top: -68.5px;
+    }
+    .m3{
+        top: -137px;
+    }
+    .m4{
+        top: -205.5px;
+    }
+    .m5{
+        top: -274px;
+    }
+    .m6{
+        top: -342.5px;
+    }
+    .m7{
+        top: -411px;
+    }
+    .more-goods-block{
+        background-color: #fff;
         .goods-block{
             display: inline-block;
             float: left;
@@ -131,6 +153,30 @@
 }
 
 
-.menu-1:hover .more-goods-block{
+.menu-1:hover .m1{
+    display: block;
+}
+
+.menu-2:hover .m2{
+    display: block;
+}
+
+.menu-3:hover .m3{
+    display: block;
+}
+
+.menu-4:hover .m4{
+    display: block;
+}
+
+.menu-5:hover .m5{
+    display: block;
+}
+
+.menu-6:hover .m6{
+    display: block;
+}
+
+.menu-7:hover .m7{
     display: block;
 }

@@ -350,10 +350,10 @@
   width: 1920px;
   position: absolute;
   top: 0;
-  left: 1640px;
+  left: 1720px;
 }
 .banner .pic .picfirst {
-  left: -280px;
+  left: -200px;
 }
 .banner img {
   display: block;
@@ -381,7 +381,7 @@
 
 .menu {
   position: absolute;
-  left: 100px;
+  left: 150px;
   top: 0;
   z-index: 10;
   width: 250px;
@@ -412,12 +412,34 @@
   color: #999999;
   font-size: 12px;
 }
-.menu .more-goods-block {
-  position: absolute;
-  background-color: #fff;
-  top: 0;
-  left: 250px;
+.menu .m1, .menu .m2, .menu .m3, .menu .m4, .menu .m5, .menu .m6, .menu .m7 {
   display: none;
+  position: absolute;
+  left: 250px;
+}
+.menu .m1 {
+  top: 0;
+}
+.menu .m2 {
+  top: -68.5px;
+}
+.menu .m3 {
+  top: -137px;
+}
+.menu .m4 {
+  top: -205.5px;
+}
+.menu .m5 {
+  top: -274px;
+}
+.menu .m6 {
+  top: -342.5px;
+}
+.menu .m7 {
+  top: -411px;
+}
+.menu .more-goods-block {
+  background-color: #fff;
 }
 .menu .more-goods-block .goods-block {
   display: inline-block;
@@ -466,7 +488,31 @@
   position: relative;
 }
 
-.menu-1:hover .more-goods-block {
+.menu-1:hover .m1 {
+  display: block;
+}
+
+.menu-2:hover .m2 {
+  display: block;
+}
+
+.menu-3:hover .m3 {
+  display: block;
+}
+
+.menu-4:hover .m4 {
+  display: block;
+}
+
+.menu-5:hover .m5 {
+  display: block;
+}
+
+.menu-6:hover .m6 {
+  display: block;
+}
+
+.menu-7:hover .m7 {
   display: block;
 }
 

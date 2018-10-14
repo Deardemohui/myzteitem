@@ -138,31 +138,31 @@ define(['jquery'],function($){
 				$btns.eq($index).addClass('btnhover').siblings('span').removeClass('btnhover');
 				if($index==0&&$qindex==4){
 						$btnlis.eq($qindex).animate({
-							left:-2200
+							left:-2120
 						});
-						$btnlis.eq($index).css('left','1640px').animate({
-							left:-280
+						$btnlis.eq($index).css('left','1720px').animate({
+							left:-200
 						});
 				}else if($index==4&&$qindex==0){
 						$btnlis.eq($qindex).animate({
-							left:1640
+							left:1720
 						});
-						$btnlis.eq($index).css('left','-2200px').animate({
-							left:-280
+						$btnlis.eq($index).css('left','-2120px').animate({
+							left:-200
 						});
 				}else if($index>$qindex){
 					$btnlis.eq($qindex).animate({
-						left:-2200
+						left:-2120
 					});
-					$btnlis.eq($index).css('left','1640px').animate({
-						left:-280
+					$btnlis.eq($index).css('left','1720px').animate({
+						left:-200
 					});
 				}else if($qindex>$index){
 					$btnlis.eq($qindex).animate({
-						left:1640
+						left:1720
 					});
-					$btnlis.eq($index).css('left','-2200px').animate({
-						left:-280
+					$btnlis.eq($index).css('left','-2120px').animate({
+						left:-200
 					});
 				}
 			}
